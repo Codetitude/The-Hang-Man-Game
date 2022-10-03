@@ -32,6 +32,6 @@
 
 ### **_Screenshots_**
 
-## ![pirate theme](https://www.freepik.com/free-vector/vintage-monochrome-skull-pirate-hat_8225178.htm#query=pirate&position=0&from_view=search)
+## ![pirate theme](https://www.freepik.com/free-vector/set-pirate-cartoon-characters_24061877.htm#page=3&query=pirate&position=9&from_view=search)
 
 ### **_Credits_**
