@@ -1,12 +1,39 @@
-console.log(alphabetDisplay)
+guessedLetters = []
 
-let alphabet = []
+const alphabet = [
+  'A',
+  'B',
+  'C',
+  'D',
+  'E',
+  'F',
+  'G',
+  'H',
+  'I',
+  'J',
+  'K',
+  'L',
+  'N',
+  'M',
+  'O',
+  'P',
+  'Q',
+  'R',
+  'S',
+  'T',
+  'U',
+  'V',
+  'W',
+  'X',
+  'Y',
+  'Z'
+]
 
-let alphabetDisplay = document.querySelectorAll('.alphabetDisplay')
+let randomWord = document.createElement('p')
 
-alphabetDisplay.innerHTML = 
+let gameOver = false
 
-const wordBank = [
+let letterBank = [
   'complex',
   'towards',
   'commercial',
@@ -17,9 +44,9 @@ const wordBank = [
   'sexual',
   'thus',
   'enhance',
-  'equally',
+  'equal',
   'current',
-  'the',
+  'pea',
   'victim',
   'down',
   'until',
@@ -32,9 +59,9 @@ const wordBank = [
   'act',
   'back',
   'take',
-  'generally',
+  'general',
   'contest',
-  'imply',
+  'embark',
   'rural',
   'dark',
   'devote',
@@ -48,15 +75,55 @@ const wordBank = [
   'about',
   'brother',
   'idea',
-  'tendency',
+  'tender',
   'borrow',
   'downtown',
-  'guilty',
+  'guilt',
   'pass'
 ]
 
-let gameOver = false
+let newWord = (randomWord.innerText =
+  letterBank[Math.floor(Math.random() * letterBank.length)])
+let wordSplit = newWord.split('').join('   ')
+document.querySelector('#word').append(wordSplit)
 
-startGame = () => {}
+console.log(wordSplit)
+//functions
 
-pickLetter = () => {}
+alphabet.forEach((letter) => {
+  let alphabetButton = document.createElement('button')
+  alphabetButton.innerText = letter
+  alphabetButton.addEventListener('click', () => {
+    alphabetButton.style.color = 'red'
+    console.log(letter)
+  })
+
+  document.querySelector('.alphabetDisplay').appendChild(alphabetButton)
+})
+
+compareLetters = () => {}
+//letter.addEventListener('click', (e) => {
+//if (gameover === false) {
+//letter(e.target)
+//
+//}
+//})
+//})
+//}
+
+//makeLetterButton()
+
+//pickLetter = () => {
+//alphabet.forEach((letter) => {
+//letter.addEventListener('click', (e) => {
+if (gameOver === false) {
+}
+//})
+//})
+//}
+//pickLetter()
+console.log(alphabet)
+
+//startGame = () => {}
+
+//startGame()

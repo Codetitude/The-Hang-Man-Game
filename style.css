@@ -2,3 +2,22 @@ body {
 
   background-color: aquamarine;
 }
+
+page-body {
+
+  
+}
+#word {
+
+  font-size: 45px;
+  text-align: center;
+
+  text-decoration-line: underline;
+}
+
+.alphabetDisplay {
+
+  text-align: center;
+
+
+}
