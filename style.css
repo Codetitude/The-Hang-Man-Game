@@ -1,23 +1,84 @@
 body {
 
-  background-color: aquamarine;
+  background-color: black;
 }
 
 page-body {
-
+ 
+ background-image: url("https://i.imgur.com/ZNfM7YCh.jpg"); 
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr  ;
+  grid-template-rows: 2fr;
   
+  grid-column-gap: 10px;
+  height: 100vh;
+  grid-template-areas: 
+  '...     wordboard'
+  '...  ...  abc-display';
+}
+
+section {
+  background-color: blue;
+  grid-area:abc-display;
+
 }
 #word {
 
-  font-size: 45px;
+  font-size: 80px;
   text-align: center;
+  background-color: red;
+  grid-area: wordboard;
+  grid-row: 1/2;
 
-  text-decoration-line: underline;
+  
+
+ 
 }
 
 .alphabetDisplay {
 
   text-align: center;
+  
 
+  
+  
+
+
+}
+
+button {
+  justify-content:baseline;
+  
+  background-color: white;
+  font-size: 20px;
+}
+
+span {
+
+  border-bottom: 2px solid black;
+  margin: 0 5px ;
+  color: rgb(253, 255, 127);
+  cursor:pointer;
+}
+
+#back {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 65px;
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+#gametitle {
+
+  color: white;
+  font-size: 130px;
+  text-align: center;
 
 }
