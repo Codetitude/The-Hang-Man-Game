@@ -14,6 +14,8 @@ lifeDisplay.innerText = '6 lives remain'
 
 let gameResultMessage = document.querySelector('#gameover')
 
+let backButton = document.querySelector('#back')
+
 const alphabet = [
   'A',
   'B',
@@ -135,10 +137,11 @@ triggerWin = () => {
   if (correctGuess === wordSplit.length) {
     gameOver = true
     lifeDisplay.style.display = 'none'
-    gameResultMessage.innerText = ' Arr....Not bad for a scallyway you win!'
+    backButton.style.display = 'none'
+    gameResultMessage.innerText = ' Arr....Not bad for a scallywag you win!'
     setTimeout(function () {
       location.reload()
-    }, 3000)
+    }, 4000)
 
     return
   }
@@ -157,12 +160,13 @@ triggerLoss = () => {
     lifeDisplay.innerText = '1 lives remain'
   } else if (maxWrong === 6) {
     lifeDisplay.style.display = 'none'
+    backButton.style.display = 'none'
     gameOver = true
-    gameResultMessage.innerText = 'Dance the hempen jig , you loss!'
+    gameResultMessage.innerText = 'Dance the hempen jig , you lost!'
 
     setTimeout(function () {
       location.reload()
-    }, 3000)
+    }, 4000)
 
     return
   }
