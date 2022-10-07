@@ -1,3 +1,5 @@
+let correctGuess = 0
+
 let alphabetButton = document.createElement('button')
 
 let randomWord = document.createElement('p')
