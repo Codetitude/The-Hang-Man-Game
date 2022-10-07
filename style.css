@@ -1,56 +1,67 @@
-body {
 
-  background-color: black;
+body {
+  background-color: white;
+}
+
+
+.frontpage {
+  background-image: url("https://i.imgur.com/ZNfM7YCh.jpg"); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
 }
 
 page-body {
  
- background-image: url("https://i.imgur.com/ZNfM7YCh.jpg"); 
- background-repeat: no-repeat;
- background-attachment: fixed;
- background-size: cover;
+ 
   display: grid;
-  grid-template-columns: 1fr  ;
-  grid-template-rows: 2fr;
-  
+  grid-template-columns: 1fr 4fr ;
+
+  justify-content: space-evenly;
   grid-column-gap: 10px;
   height: 100vh;
   grid-template-areas: 
   '...     wordboard'
-  '...  ...  abc-display';
+  'lifecounter    abc-display';
 }
 
 section {
-  background-color: blue;
+  
   grid-area:abc-display;
+  grid-row: 2/3;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  display:flex;
+  flex-wrap: wrap;
 
 }
 #word {
 
-  font-size: 80px;
+  font-size: 120px;
   text-align: center;
-  background-color: red;
+  
   grid-area: wordboard;
   grid-row: 1/2;
-
   
+  align-items:center;
+  justify-content: center;
+  display: flex;
 
- 
 }
 
 .alphabetDisplay {
 
   text-align: center;
-  
+  justify-content: center;
+  align-items: flex-start;
 
   
-  
-
-
 }
 
 button {
-  justify-content:baseline;
+  justify-content:center;
+  align-items: center;
   
   background-color: white;
   font-size: 20px;
@@ -58,11 +69,27 @@ button {
 
 span {
 
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
   margin: 0 5px ;
-  color: rgb(253, 255, 127);
+  color:white;
   cursor:pointer;
+  align-items: baseline;
+  justify-content: center;
+  
 }
+
+#gameover {
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  font-size: 40px;
+  flex-wrap: wrap;
+  
+}
+
+
+
 
 #back {
 
@@ -70,15 +97,53 @@ span {
   flex-direction: column;
   align-items: flex-end;
   width: 65px;
-  background-color: white;
+  height: 40px;
+  opacity: 0.4;
   color: black;
-  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  
+  justify-items: center;
 }
+
+
+#lifeCounter {
+
+  font-size: 30px;
+  color: black;
+  grid-area: lifecounter;
+  border: solid 2px black;
+  border-radius: 5px;
+  text-align: center;
+  line-height: normal;
+  
+}
+
+
+.titlepage {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
 
 #gametitle {
 
-  color: white;
+  color:black;
   font-size: 130px;
   text-align: center;
+  justify-content: flex-start;
+
+}
+
+#playgame {
+
+  font-size: 50px ;
+  text-align: center;
+  color: white;
+  text-emphasis-color: black;
+  align-self: center;justify-content: flex-end;
+  align-items: center;
 
 }

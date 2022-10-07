@@ -1,5 +1,3 @@
-let correctGuess = 0
-
 let alphabetButton = document.createElement('button')
 
 let randomWord = document.createElement('p')
@@ -10,7 +8,9 @@ let maxWrong = 0 // 6 is losing
 
 let lifeDisplay = document.querySelector('#lifeCounter')
 
-lifeDisplay.append('6')
+lifeDisplay.innerText = '6 lives remain'
+
+let gameResultMessage = document.querySelector('#gameover')
 
 const alphabet = [
   'A',
@@ -52,18 +52,18 @@ let letterBank = [
   'salt',
   'parrot',
   'siren',
-  'equal',
+  'captain',
   'current',
-  'pea',
-  'victim',
-  'down',
-  'until',
-  'whole',
-  'analyze',
-  'formula',
-  'circumstance',
-  'foot',
-  'income',
+  'sail',
+  'island',
+  'rum',
+  'tide',
+  'beard',
+  'ocean',
+  'bootleg',
+  'pirate',
+  'caribbean',
+  'gold',
   'act',
   'back',
   'take',
@@ -119,8 +119,6 @@ alphabet.forEach((letter) => {
           console.log('this is your win condition ' + correctGuess)
         }
       }
-
-      //console.log(event.target.innerText)
       if (wordSplit.includes(alphabetButton.innerText) === false) {
         maxWrong++
         console.log('you lose a life!' + maxWrong)
@@ -137,14 +135,27 @@ alphabet.forEach((letter) => {
 triggerWin = () => {
   if (correctGuess === wordSplit.length) {
     gameOver = true
-    alert('Not bad for a scallyway you win!')
+    lifeDisplay.style.display = 'none'
+    gameResultMessage.innerText = ' Arr....Not bad for a scallyway you win!'
     return
   }
 }
+
 triggerLoss = () => {
-  if (maxWrong === 6) {
+  if (maxWrong === 1) {
+    lifeDisplay.innerText = '5 lives remain'
+  } else if (maxWrong === 2) {
+    lifeDisplay.innerText = '4 lives remain'
+  } else if (maxWrong === 3) {
+    lifeDisplay.innerText = '3 lives remain'
+  } else if (maxWrong === 4) {
+    lifeDisplay.innerText = '2 lives remain'
+  } else if (maxWrong === 5) {
+    lifeDisplay.innerText = '1 lives remain'
+  } else if (maxWrong === 6) {
+    lifeDisplay.style.display = 'none'
     gameOver = true
-    alert('Dance the hempen jig , you loss!')
+    gameResultMessage.innerText = 'Dance the hempen jig , you loss!'
     return
   }
 }
