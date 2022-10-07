@@ -30,10 +30,6 @@
 
 - create a display panel of the alphabet(array)
 
-### **_Screenshots_**
-
-![pirate theme](https://www.freepik.com/free-vector/set-pirate-cartoon-characters_24061877.htm#page=3&query=pirate&position=9&from_view=search)
-
 ### **_Credits_**
 
 [freepik](https://www.freepik.com/free-vector/abstract-background-with-vintage-paper-design_18073291.htm#query=pirate%20background&position=31&from_view=search&track=sph)

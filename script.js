@@ -103,8 +103,6 @@ wordSplit.forEach((newLetter) => {
 
 console.log(wordSplit)
 
-//functions
-
 alphabet.forEach((letter) => {
   let alphabetButton = document.createElement('button')
   alphabetButton.innerText = letter
