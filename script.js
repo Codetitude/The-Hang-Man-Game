@@ -66,30 +66,27 @@ let letterBank = [
   'pirate',
   'caribbean',
   'gold',
-  'act',
-  'back',
-  'take',
-  'general',
-  'contest',
-  'embark',
-  'rural',
-  'dark',
-  'devote',
-  'bar',
-  'liberal',
-  'club',
-  'well',
-  'seven',
-  'somewhat',
-  'paper',
-  'about',
-  'brother',
-  'idea',
-  'tender',
-  'borrow',
-  'downtown',
-  'guilt',
-  'pass'
+  'capsize',
+  'plunder',
+  'pillage',
+  'tale',
+  'mate',
+  'deck',
+  'aboard',
+  'kraken',
+  'mermaid',
+  'sea',
+  'barrel',
+  'vessel',
+  'sailor',
+  'skull',
+  'cargo',
+  'fish',
+  'voyage',
+  'sword',
+  'monkey',
+  'attack',
+  'storm'
 ]
 
 let newWord = (randomWord.innerText =
@@ -139,6 +136,10 @@ triggerWin = () => {
     gameOver = true
     lifeDisplay.style.display = 'none'
     gameResultMessage.innerText = ' Arr....Not bad for a scallyway you win!'
+    setTimeout(function () {
+      location.reload()
+    }, 3000)
+
     return
   }
 }
@@ -158,6 +159,11 @@ triggerLoss = () => {
     lifeDisplay.style.display = 'none'
     gameOver = true
     gameResultMessage.innerText = 'Dance the hempen jig , you loss!'
+
+    setTimeout(function () {
+      location.reload()
+    }, 3000)
+
     return
   }
 }
