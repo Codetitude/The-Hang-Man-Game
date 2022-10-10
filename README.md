@@ -7,6 +7,7 @@
 [Instagram](https://www.instagram.com/maciejparol333/)
 [Linkedin](https://www.linkedin.com/in/maciej-parol-/)
 [Trello](https://trello.com/b/aW7aYazf/hangman-game)
+[Surge](https://piratehangman.surge.sh/gamepage.html)
 
 ---
 
